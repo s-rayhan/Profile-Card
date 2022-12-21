@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .conatinar{
+            margin: 50px 30px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .profile-card{
+            width: 352px;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 4px 8px #f1f1f1;
+        }
+        .cover{
+            height: 7rem;
+            background-color: rgb(73, 73, 243);
+        }
+        .profile{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-top: -20%;
+            border-radius: 50%;
+            
+        }
+        img:active{
+            width: 100%;
+            height: 100%;
+            border-radius: 0%;
+
+        }
+        .name{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .info{
+            margin-left: 30px;
+            font-size: 18px;
+            color: rgb(74, 73, 73);
+        }
+        ion-icon{
+            margin-bottom: -3px;
+            color: #000;
+            margin-right: 5px;
+        }
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            font-size: 27px;
+            margin-left: -50px;
+        }
+        ul li{
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatinar">
+        <div class="profile-card">
+            <div class="cover">
+
+            </div>
+            <div class="profile">
+                <img src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg" alt="">
+            </div>
+            <div class="name">
+                Full Name
+            </div>
+            <div class="info">
+                <div class="others">
+                    <p class="mail">
+                        <ion-icon name="mail"></ion-icon> name@email.com
+                    </p>
+                    <p class="phone">
+                        <ion-icon name="call"></ion-icon> 0182387743738
+                    </p>
+                    <p class="website">
+                        <ion-icon name="globe"></ion-icon> www.website.com
+                    </p>
+                    <p class="location">
+                        <ion-icon name="location"></ion-icon> Location
+                    </p>
+                </div>
+            </div>
+            <div class="social">
+
+                <ul>
+                    <li><ion-icon name="logo-github"></ion-icon></li>
+                    <li><ion-icon name="logo-linkedin"></ion-icon></li>
+                    <li><ion-icon name="logo-stackoverflow"></ion-icon></li>
+                    <li><ion-icon name="logo-reddit"></ion-icon></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
